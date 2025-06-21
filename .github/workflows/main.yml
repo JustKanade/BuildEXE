@@ -41,8 +41,8 @@ jobs:
           pip install pyinstaller
       - run: |
           pyinstaller --onefile --windowed `
-            --icon=icons/Roblox-Audio-Extractor.ico `
-            --add-data="icons/*;icons" `
+            --icon=.readme/ui-images/Roblox-Audio-Extractor.ico `
+            --add-data=".readme/ui-images/*;.readme/ui-images" `
             --name Roblox_Audio_Extractor_${{ needs.prepare.outputs.tag }}_win `
             Roblox_Audio_Extractor.py
       - uses: actions/upload-artifact@v4
@@ -64,7 +64,7 @@ jobs:
           pip install pyinstaller
       - run: |
           pyinstaller --onefile \
-            --add-data="icons/*:icons" \
+            --add-data=".readme/ui-images/*:.readme/ui-images" \
             --name Roblox_Audio_Extractor_${{ needs.prepare.outputs.tag }}_linux \
             Roblox_Audio_Extractor.py
       - uses: actions/upload-artifact@v4
@@ -86,7 +86,7 @@ jobs:
           pip install pyinstaller
       - run: |
           pyinstaller --onefile \
-            --add-data="icons/*:icons" \
+            --add-data=".readme/ui-images/*:.readme/ui-images" \
             --name Roblox_Audio_Extractor_${{ needs.prepare.outputs.tag }}_macos \
             Roblox_Audio_Extractor.py
       - uses: actions/upload-artifact@v4
