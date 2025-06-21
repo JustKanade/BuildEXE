@@ -4,7 +4,7 @@
 Roblox资源提取器 - 从Roblox缓存中提取音频、图片、纹理和模型文件
 Roblox Asset Extractor - Extract audio, images, textures and models from Roblox cache
 作者/Author: JustKanade
-修改/Modified by: User (Enhanced Version)
+
 版本/Version: 0.15.0 (Multiple Asset Types Support)
 许可/License: GNU Affero General Public License v3.0 (AGPLv3)
 """
@@ -2984,13 +2984,13 @@ class RobloxAssetExtractorGUI:
             icon_label.pack(side=tk.LEFT, padx=10)
 
             # 创建标题标签
-            title_label = ttk.Label(top_frame, text="Roblox Asset Extractor (Enhanced Version)",
+            title_label = ttk.Label(top_frame, text="Roblox Asset Extractor",
                                     font=("Arial", 16, "bold"))
             title_label.pack(side=tk.LEFT, padx=10)
 
         except Exception as e:
             # 如果无法加载图标，只显示标题
-            title_label = ttk.Label(top_frame, text="Roblox Asset Extractor (Enhanced Version)",
+            title_label = ttk.Label(top_frame, text="Roblox Asset Extractor ",
                                     font=("Arial", 16, "bold"))
             title_label.pack(side=tk.LEFT, padx=10)
 
